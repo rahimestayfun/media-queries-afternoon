@@ -1,0 +1,114 @@
+.main-header-container{
+    background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white
+    
+}
+nav{
+    position: relative;
+    z-index: 100;
+    /* background-color: black; */
+}
+.nav-container{
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    z-index: 100;
+}
+.menu-toggle{
+    display: none;
+}
+.title-link{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 28px;
+    line-height: 42px;
+    color:#fec503;
+}
+.links-container{
+    width: 40%;
+    display: flex;
+    justify-content:space-evenly;
+    font-family: 'Montserrat', sans-serif;
+}
+li:hover{
+    color:#fec503;
+}
+
+.text-container{
+    text-align: center;
+    margin-top: -450px;
+    color: white;
+}
+
+.welcome-text-one{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.welcome-text-two{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 75px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+.tell-more-button{
+    font-size: 18px;
+    font-weight: bold;
+    background-color:#fed136;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.section-container{
+    height: 200px;
+}
+menu{
+    width: 94%;
+    height: 200px;
+    background-color:#212529;
+    position: absolute;
+    z-index: 0;
+    transform: translateY(-1000px);
+    transition: transform .5s;
+    display: none;
+    padding-left: 50px;
+}
+menu > p{
+    margin-top: 20px;
+}
+.menu-open{
+    transform: translateY(-640px);
+    color: white;
+}
+
+@media(max-width:990px){
+    .links-container{
+        display: none
+    }
+    .menu-toggle{
+        display:flex;
+        background-color:#fed136;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        
+    }
+    .nav-container{
+        background-color:#212529;
+    }
+    menu{
+        display: block;
+    }
+    
+
+}
